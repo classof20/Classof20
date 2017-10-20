@@ -20,7 +20,11 @@ from classmates.views import *
 from django.conf.urls.static import static  # for image
 from django.conf import settings  # for image
 
+from classmates.views import *
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', home, name='home'),
+    url(r'^mambers/$', mambers, name='mambers'),
+    url(r'^mamber/(?P<slug>[\w-]+)/$', mamber, name='mamber'),
 ]

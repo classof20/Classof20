@@ -1,3 +1,5 @@
 *.sqlite3
 *.pyc
 classof20/settings.py
+/static
+migrations/
